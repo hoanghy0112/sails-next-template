@@ -11,5 +11,5 @@
 import AppController from "../api/controllers/AppController";
 
 export const routes = {
-  "GET /api/data": AppController.getData,
+  "GET /data": AppController.getData,
 };

@@ -30,7 +30,8 @@ module.exports = (sails) => {
 
       // Create special route to handle Next.js SSR
       sails.on("router:after", () => {
-        sails.router.bind(toRegex(api.prefix), {
+        const a = sails.config[this.configKey].app;
+        sails.router.bind('r|^/(ui).*$|', {
           skipAssets: false,
 
           target: (req, res) => {
@@ -51,7 +52,9 @@ module.exports = (sails) => {
     async initialize(done) {
       // Prepare Next.js app
       try {
+        log("Configuring Next.js app...");
         await sails.config[this.configKey].app.prepare();
+        log("Finished configuring Next.js app...");
         done();
       } catch (ex) {
         error(ex.stack);
