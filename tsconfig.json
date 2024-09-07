@@ -25,7 +25,7 @@
     "**/*.ts",
     "**/*.tsx",
     "app/page.tsx",
-    "app/sub-page/index.tsx",
+    "app/sub-page/page.tsx",
     ".next/types/**/*.ts",
     "api/controllers/AppController.ts",
     "api/services/AppService.ts"

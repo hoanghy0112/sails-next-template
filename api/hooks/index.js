@@ -14,7 +14,6 @@ module.exports = (sails) => {
 
       // Retrieve configuration
       const config = sails.config[this.configKey];
-      console.log({ config });
       const {
         next: { server, api },
       } = config;

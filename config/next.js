@@ -21,18 +21,13 @@ module.exports.next = {
         config,
         { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
       ) => {
-        console.log({
-          config,
-          buildId,
-          dev,
-          isServer,
-          defaultLoaders,
-          nextRuntime,
-          webpack,
-        });
-        // console.log(config.module.rules[0]);
         return {
           ...config,
+          eslint: {
+            // Warning: This allows production builds to successfully complete even if
+            // your project has ESLint errors.
+            ignoreDuringBuilds: true,
+          },
           resolve: {
             extensions: [".ts", ".tsx", ".js", ".jsx", "..."], // Add '.tsx' and '.ts' here
           },

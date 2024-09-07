@@ -28,12 +28,14 @@
   "devDependencies": {
     "@babel/plugin-transform-typescript": "^7.25.2",
     "@babel/preset-typescript": "^7.24.7",
-    "eslint": "5.16.0",
+    "eslint": "9.10.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.4"
   },
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
+    "start:dev": "set NODE_ENV=development&&node app.js --es_staging",
+    "start:prod": "set NODE_ENV=production&&node app.js --es_staging",
+    "build": "next build",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
