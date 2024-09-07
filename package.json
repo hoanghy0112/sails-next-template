@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "a Sails application",
   "keywords": [],
+  "type": "commonjs",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.25.4",
     "@babel/preset-env": "^7.25.4",

@@ -30,7 +30,7 @@ module.exports.next = {
           nextRuntime,
           webpack,
         });
-        console.log(config.module.rules[0]);
+        // console.log(config.module.rules[0]);
         return {
           ...config,
           resolve: {

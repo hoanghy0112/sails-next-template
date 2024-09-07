@@ -8,7 +8,8 @@
  * https://sailsjs.com/anatomy/config/routes-js
  */
 
-module.exports.routes = {
+import AppController from "../api/controllers/AppController";
 
-
+export const routes = {
+  "GET /api/data": AppController.getData,
 };

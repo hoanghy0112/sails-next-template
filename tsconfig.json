@@ -2,17 +2,13 @@
   "compilerOptions": {
     "jsx": "preserve",
     "target": "es6",
-    "module": "ES2020",
+    "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "noEmit": true,
     "incremental": true,
@@ -30,9 +26,9 @@
     "**/*.tsx",
     "app/page.tsx",
     "app/sub-page/index.jsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "api/controllers/AppController.js",
+    "api/services/AppService.js"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

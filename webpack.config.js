@@ -2,7 +2,7 @@
 module.exports = {
   // Other configuration options...
   resolve: {
-    extensions: [".tsx", ".ts", ".js"], // Add '.tsx' and '.ts' here
+    extensions: [".ts", ".tsx", ".js"], // Add '.tsx' and '.ts' here
   },
   module: {
     rules: [

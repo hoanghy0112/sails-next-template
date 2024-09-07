@@ -56,7 +56,6 @@ try {
   console.error(
     "(It even uses your app directory's local Sails install, if possible.)"
   );
-  return;
 } //-•
 
 // Start server
