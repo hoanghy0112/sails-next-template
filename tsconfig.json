@@ -25,10 +25,10 @@
     "**/*.ts",
     "**/*.tsx",
     "app/page.tsx",
-    "app/sub-page/index.jsx",
+    "app/sub-page/index.tsx",
     ".next/types/**/*.ts",
-    "api/controllers/AppController.js",
-    "api/services/AppService.js"
+    "api/controllers/AppController.ts",
+    "api/services/AppService.ts"
   ],
   "exclude": ["node_modules"]
 }
