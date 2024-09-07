@@ -6,6 +6,8 @@
   "keywords": [],
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.25.4",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
     "@sailshq/lodash": "^3.10.6",
     "@types/node": "^22.5.4",
     "@types/react": "^18.3.5",

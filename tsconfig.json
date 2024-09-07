@@ -17,14 +17,20 @@
     "noEmit": true,
     "incremental": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/page.jsx",
-    "pages/sub-page/index.jsx"
+    "app/page.jsx",
+    "app/sub-page/index.jsx",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
