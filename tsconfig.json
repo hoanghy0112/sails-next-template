@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/page.jsx",
+    "app/page.tsx",
     "app/sub-page/index.jsx",
     ".next/types/**/*.ts"
   ],
