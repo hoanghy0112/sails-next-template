@@ -18,7 +18,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": "."
   },
   "include": [
     "next-env.d.ts",
@@ -28,7 +29,8 @@
     "app/ui/sub-page/page.tsx",
     ".next/types/**/*.ts",
     "api/controllers/AppController.ts",
-    "api/services/AppService.ts"
+    "api/services/AppService.ts",
+    "./types/*"
   ],
   "exclude": ["node_modules"]
 }

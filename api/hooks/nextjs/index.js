@@ -1,7 +1,7 @@
 const chalk = require("chalk");
 const next = require("next");
 
-const defaultConfig = require("../../config/next");
+const defaultConfig = require("../../../config/next");
 
 module.exports = (sails) => {
   return {

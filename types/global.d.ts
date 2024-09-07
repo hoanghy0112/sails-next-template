@@ -1,9 +1,8 @@
-declare type SailRequest = {
+declare interface SailsRequest {
   query: Record<string, string>;
   param: (name: string) => string;
-};
-
-declare type SailResponse = {
+}
+declare interface SailsResponse {
   status: (statusCode: number) => SailResponse;
   json: (data: any) => void;
-};
+}
