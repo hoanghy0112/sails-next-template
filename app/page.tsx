@@ -1,6 +1,6 @@
 import React from "react";
-import MyComponent from "../MyComponent";
-import { a } from "../utils";
+import MyComponent from "./MyComponent";
+import { a } from "./utils";
 
 export default () => {
   let req: SailsRequest = {

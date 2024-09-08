@@ -4,7 +4,7 @@ module.exports.next = {
   // Sails integration options
   api: {
     // Prefix for all Sails API routes
-    prefix: "/",
+    prefix: "/api",
   },
 
   // Next.js instance options. Passed to `next()`.
