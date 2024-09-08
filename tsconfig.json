@@ -14,6 +14,7 @@
     "incremental": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "outDir": "dist",
     "plugins": [
       {
         "name": "next"
@@ -22,11 +23,14 @@
     "baseUrl": ".",
     "paths": {
       "*": ["types/*.d.ts"]
-    }
+    },
+    "typeRoots": ["./types", "./node_modules/@types"], // Specify where to look for types
+    "types": ["node"]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
+    "**/*.d.ts",
     "**/*.tsx",
     "app/**/*",
     ".next/types/**/*.ts",

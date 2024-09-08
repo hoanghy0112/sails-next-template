@@ -19,7 +19,6 @@
     "sails": "^1.5.11",
     "sails-hook-orm": "^4.0.3",
     "sails-hook-sockets": "^3.0.0",
-    "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
@@ -30,11 +29,13 @@
     "@babel/preset-typescript": "^7.24.7",
     "eslint": "9.10.0",
     "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
   "scripts": {
-    "start:dev": "set NODE_ENV=development&&node app.js",
+    "start:dev": "set NODE_ENV=development&&ts-node app.ts",
     "start:prod": "set NODE_ENV=production&&node app.js",
+    "test-file": "ts-node test.ts",
     "build": "next build",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
