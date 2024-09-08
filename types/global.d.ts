@@ -6,9 +6,3 @@ declare interface SailsResponse {
   status: (statusCode: number) => SailResponse;
   json: (data: any) => void;
 }
-
-declare namespace Custom {
-  type data = {
-    field: string;
-  }
-}

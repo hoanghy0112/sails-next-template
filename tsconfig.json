@@ -1,4 +1,7 @@
 {
+  "ts-node": {
+    "files": true
+  },
   "compilerOptions": {
     "jsx": "preserve",
     "target": "es6",
@@ -21,10 +24,7 @@
       }
     ],
     "baseUrl": ".",
-    "paths": {
-      "*": ["types/*.d.ts"]
-    },
-    "typeRoots": ["./types", "./node_modules/@types"], // Specify where to look for types
+    "typeRoots": ["types", "./node_modules/@types"], // Specify where to look for types
     "types": ["node"]
   },
   "include": [
@@ -35,7 +35,7 @@
     "app/**/*",
     ".next/types/**/*.ts",
     "api/**/*",
-    "./types/*"
-  ],
+    "types/*"
+, "app.js"  ],
   "exclude": ["node_modules"]
 }
